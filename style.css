@@ -1,0 +1,188 @@
+/* ------------------------------
+   BASIC RESET & FONTS
+--------------------------------*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #e7f5ec;
+  color: #222;
+}
+
+/* ------------------------------
+   LAYOUT STYLING
+--------------------------------*/
+.w3-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: #dceee3;
+  padding: 70px 0;
+}
+
+.w3-content {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.w3-col {
+  flex: 1;
+  min-width: 300px;
+  padding: 3%;
+}
+
+/* ------------------------------
+   LEFT COLUMN (TEXT + BUTTONS)
+--------------------------------*/
+.w3-center {
+  text-align: center;
+}
+
+.w3-center h1 {
+  font-size: 90px;
+  font-weight: 700;
+  margin-top: -10px;
+  margin-bottom: 10px;
+  color: #000;
+}
+
+.w3-center p {
+  font-size: 18px;
+  margin-bottom: 25px;
+  color: #222;
+}
+
+/* ------------------------------
+   BUTTON STYLES
+--------------------------------*/
+.w3-button {
+  display: inline-block;
+  width: 200px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: 600;
+  transition: 0.3s ease;
+  font-size: 16px;
+  border: none;
+}
+
+/* Button Colors */
+.tut-button {
+  background-color: #04AA6D;
+  color: #fff;
+}
+
+.tut-button:hover {
+  background-color: #038f5d;
+}
+
+.ws-yellow {
+  background-color: #fff4a3;
+  color: #000;
+}
+
+.ws-yellow-hover:hover {
+  background-color: #ffe86a;
+}
+
+.black-color {
+  background-color: #333;
+  color: #fff;
+}
+
+.black-color:hover {
+  background-color: #000;
+}
+
+.ws-pink {
+  background-color: #f7a3b2;
+  color: #fff;
+}
+
+.ws-pink-hover:hover {
+  background-color: #e87b96;
+}
+
+/* ------------------------------
+   RIGHT COLUMN (CODE EXAMPLE)
+--------------------------------*/
+.w3-card-2 {
+  background-color: #f8f8f8;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  padding: 16px;
+}
+
+h3 {
+  font-size: 22px;
+  margin-bottom: 12px;
+}
+
+/* Code Box Styling */
+.w3-code {
+  background-color: #fff;
+  border-left: 6px solid #04AA6D;
+  padding: 15px;
+  font-family: 'Courier New', monospace;
+  color: #333;
+  overflow-x: auto;
+  border-radius: 6px;
+  height: 300px;
+  line-height: 1.6;
+}
+
+/* Syntax Colors */
+.doctypecolor { color: slategray; }
+.tagnamecolor { color: #905; }
+.tagcolor { color: #999; }
+
+/* Try It Button */
+.w3-card-2 a {
+  display: inline-block;
+  background-color: #04AA6D;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-weight: 600;
+  margin-top: 15px;
+  transition: 0.3s;
+}
+
+.w3-card-2 a:hover {
+  background-color: #038f5d;
+}
+
+/* ------------------------------
+   RESPONSIVE DESIGN
+--------------------------------*/
+@media (max-width: 900px) {
+  .w3-row {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .w3-center h1 {
+    font-size: 60px;
+  }
+
+  .w3-button {
+    width: 220px;
+  }
+
+  .w3-code {
+    height: auto;
+  }
+}
