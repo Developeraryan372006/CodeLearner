@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML - Learn Web Structure</title>
+  <link rel="icon" href="HTML1 LOGO.png" type="image/png">
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box;font-family:"Segoe UI",sans-serif;}
+    body{background:#f9fafc;color:#333;line-height:1.6;}
+    header{background:#e34c26;color:#fff;padding:1rem 2rem;text-align:center;}
+    header h1{font-size:2rem;}
+    nav{margin-top:10px;}
+    nav a{color:#fff;text-decoration:none;margin:0 15px;font-weight:500;}
+    nav a:hover{text-decoration:underline;}
+    .hero{background:linear-gradient(to right,#e34c26,#ff6f47);color:white;padding:4rem 2rem;text-align:center;}
+    .hero h2{font-size:2.5rem;margin-bottom:1rem;}
+    .container{max-width:1100px;margin:auto;padding:2rem;}
+    .card{background:white;padding:1.5rem;margin:1rem 0;border-radius:10px;box-shadow:0 4px 6px rgba(0,0,0,0.1);transition:.3s;}
+    .card:hover{transform:translateY(-5px);}
+    .card h3{margin-bottom:.8rem;color:#e34c26;}
+    pre{background:#f4f4f4;padding:1rem;border-radius:5px;overflow-x:auto;}
+    footer{background:#e34c26;color:white;text-align:center;padding:1rem;margin-top:2rem;}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>HTML</h1>
+    <nav>
+      <a href="#intro">Introduction</a>
+      <a href="#history">History</a>
+      <a href="#features">Features</a>
+      <a href="#uses">Applications</a>
+      <a href="#advantages">Advantages</a>
+      <a href="#example">Example</a>
+      <a href="#resources">Resources</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>The Backbone of the Web</h2>
+    <p>HTML defines the structure and content of web pages.</p>
+  </section>
+
+  <div class="container">
+    <div id="intro" class="card">
+      <h3>Introduction</h3>
+      <p>HTML (HyperText Markup Language) is the standard markup language for creating web pages. It structures text, images, links, and multimedia.</p>
+    </div>
+
+    <div id="history" class="card">
+      <h3>History</h3>
+      <p>HTML was invented by Tim Berners-Lee in 1991. It has since evolved through versions, with HTML5 being the modern standard.</p>
+    </div>
+
+    <div id="features" class="card">
+      <h3>Key Features</h3>
+      <ul>
+        <li>Defines structure of web content</li>
+        <li>Supports multimedia embedding</li>
+        <li>Hyperlinking between documents</li>
+        <li>Semantic tags (header, footer, article)</li>
+      </ul>
+    </div>
+
+    <div id="uses" class="card">
+      <h3>Applications</h3>
+      <ul>
+        <li>Creating web pages</li>
+        <li>Email templates</li>
+        <li>Web apps with CSS & JS</li>
+        <li>Documentation & eBooks</li>
+      </ul>
+    </div>
+
+    <div id="advantages" class="card">
+      <h3>Advantages & Limitations</h3>
+      <ul>
+        <li><b>Advantages:</b> Easy to learn, universal standard</li>
+        <li><b>Limitations:</b> Static (needs CSS/JS for interactivity)</li>
+      </ul>
+    </div>
+
+    <div id="example" class="card">
+      <h3>Hello World Example</h3>
+      <pre>
+<!DOCTYPE html>
+<html>
+  <body>
+    <h1>Hello, World!</h1>
+  </body>
+</html>
+      </pre>
+      <p><b>Output:</b></p>
+      <pre>
+Hello, World!
+      </pre>
+    </div>
+
+    
+     <div id="compiler" class="card">
+      <h3>HTML Editor</h3>
+      <p><a href="https://www.programiz.com/html/online-compiler/">Edit to Execute</a></p>
+    </div>
+
+
+    <div id="resources" class="card">
+      <h3>Resources</h3>
+      <ul>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">MDN HTML</a></li>
+        <li><a href="https://www.w3schools.com/html/" target="_blank">W3Schools HTML</a></li>
+        <li><a href="https://html.com/" target="_blank">HTML.com</a></li>
+      </ul>
+    </div>
+
+    <div id="contact" class="card">
+      <h3>Contact</h3>
+      <p>Email: <a href="mailto:info@html.com">info@html.com</a></p>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2025 Learn HTML | Designed by SAD</p>
+  </footer>
+</body>
+</html>
