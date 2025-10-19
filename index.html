@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Code Learner</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+
+   <style>
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #f8f9fb;
+  background-color:#E2F9FF;
+  margin: 0;
+  padding: 0;
+}
+
+
+   header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  background-color: skyblue;
+  padding: 15px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+header img {
+  height: 40px;
+  margin-right: 10px;
+}
+
+header h1 {
+  font-size: 22px;
+  font-weight: 600;
+  color: #333;
+}
+
+
+.navbar{
+       display: flex;
+       height: 85px;
+}
+
+ .nav-list{
+     width: 100%;
+    background-color: rgb(29, 80, 190);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+
+ .nav-list li{
+      list-style: none;
+    padding: 19px;
+ }
+
+
+ .nav-list li a{
+     text-decoration: none;
+     color: white;
+ }
+
+    .search-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.search-container input {
+  padding: 10px 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px 0 0 8px;
+  outline: none;
+  width: 250px;
+  font-size: 14px;
+}
+
+.search-container button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 0 8px 8px 0;
+  background: #b656f7;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.search-container button:hover {
+  background: #0056b3;
+}
+
+.containerSubheader {
+  display: flex;                   /* Makes items horizontal */
+  justify-content: center;         /* Centers them across the page */
+  align-items: center;
+  list-style: none;                /* Removes bullets */
+  background-color: white;
+  margin: 0;
+  padding: 10px 0;
+  flex-wrap: wrap;                 /* Allows wrapping on small screens */
+}
+
+.containerSubheader li {
+  margin: 0 15px;                  /* Space between items */
+}
+
+.containerSubheader li a {
+  text-decoration: none;
+  color: rgb(39, 50, 57);
+  font-weight: 500;
+  font-size: 16px;
+  transition: color 0.3s, border-bottom 0.3s;
+}
+
+.containerSubheader li a:hover {
+  color: #007bff;
+  border-bottom: 2px solid #007bff;
+}
+
+
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 30px;
+  max-width: 1000px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+.card {
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  padding: 25px 15px;
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  
+}
+
+.card img {
+  width: 180px;
+  height: auto;
+  
+}
+
+.logo-text {
+  margin-top: 12px;
+  font-size: 22px;
+  font-weight: 600;
+  color: #444;
+}
+
+
+footer {
+  text-align: center;
+  padding: 15px;
+  background: #222;
+  color: white;
+  font-size: 13px;
+  margin-top: 40px;
+}
+
+.c-logo {
+  text-decoration: none;
+}
+
+
+</style>
+</head>
+<body>
+
+
+    <header class="header">
+        <img src="PROJECT LOGO 2.png" alt="Logo">
+        <h1>CODE LEARNER</h1>
+    </header>
+
+      <nav class="navbar">
+       <ul class="nav-list">
+   
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about us.html">About</a></li>
+        <li><a href="contact us.html">ContactUs</a></li>
+       
+       
+
+  <div class="search-container">
+       
+  <input type="text" id="searchInput" placeholder="Search...">
+  <button onclick="search()">Search</button>
+</div>
+
+        <li><a href="login.html">Login</a></li>
+        </ul>
+    </nav>
+
+  <ul class="containerSubheader">
+    <li><a href="#html" class="link" style="color: rgb(39, 50, 57);">HTML</a></li>
+     <li><a href="#css" class="link" style="color: rgb(39, 50, 57);">CSS</a></li>
+    <li><a href="#javascript" class="link" style="color: rgb(39, 50, 57);">JavaScript</a></li>
+     <li><a href="#c">C </a></li>
+    <li><a href="#cpp" class="link" style="color: rgb(39, 50, 57);">C++</a></li>
+    <li><a href="#java" class="link" style="color: rgb(39, 50, 57);">Java</a></li>
+    <li><a href="#python" class="link" style="color: rgb(39, 50, 57);">Python</a></li>
+    <li><a href="#sql" class="link" style="color: rgb(39, 50, 57);">SQL</a></li>
+  </ul>
+    <div class="card-container">
+  <!-- C Language -->
+  <a href="c.html" class="c-logo">
+    <div class="card">
+      <img src="c LOGO.png" alt="C">
+      <span class="logo-text">C LANGUAGE</span>
+    </div>
+  </a>
+
+  <!-- C++ -->
+  <a href="cpp.html" class="c-logo">
+    <div class="card">
+      <img src="c++LOGO.png" alt="C++">
+      <span class="logo-text">C++ LANGUAGE</span>
+    </div>
+  </a>
+
+  <!-- Java -->
+  <a href="java.html" class="c-logo">
+    <div class="card">
+      <img src="Java 1 LOGO.png" alt="Java">
+      <span class="logo-text">JAVA</span>
+    </div>
+  </a>
+
+  <!-- JavaScript -->
+  <a href="javascript.html" class="c-logo">
+    <div class="card">
+      <img src="java script 1 LOGO.png" alt="JavaScript">
+      <span class="logo-text">JAVASCRIPT</span>
+    </div>
+  </a>
+
+  <!-- Python -->
+  <a href="python.html" class="c-logo">
+    <div class="card">
+      <img src="Python LOGO.png" alt="Python">
+      <span class="logo-text">PYTHON</span>
+    </div>
+  </a>
+
+  <!-- HTML -->
+  <a href="html.html" class="c-logo">
+    <div class="card">
+      <img src="HTML1 LOGO.png" alt="HTML">
+      <span class="logo-text">HTML</span>
+    </div>
+  </a>
+
+  <!-- CSS -->
+  <a href="css.html" class="c-logo">
+    <div class="card">
+      <img src="CSS1 LOGO.png" alt="CSS">
+      <span class="logo-text">CSS</span>
+    </div>
+  </a>
+
+  <!-- SQL -->
+  <a href="sql.html" class="c-logo">
+    <div class="card">
+      <img src="SQL1 LOGO.png" alt="SQL">
+      <span class="logo-text">SQL</span>
+    </div>
+  </a>
+</div>
+<div class="w3-row w3-padding-32 ws-light-green" style="margin-top:-10px;">
+<div class="w3-content">
+
+ <div class="w3-col l6 w3-center" style="padding:3%;">
+  <div id="html"></div>
+  <h1 style="font-size:100px;font-weight:700;margin-top:-18px!important;">HTML</h1>
+  <p style="font-size:19px;">The language for building web pages</p>
+  <a href="html.html"w3-button ga-fp tut-button" style="margin-bottom:2px;">Learn HTML</a><br>
+  <a style="position:relative;overflow:visible;margin-bottom:1px;" href="https://www.w3schools.com/videos/index.php" class="w3-button ga-fp ws-yellow tut-button ws-yellow-hover" title="HTML video tutorial">Video Tutorial</a><br>
+  <a href="html.html"class="w3-button ga-fp w3-block ref-button black-color">HTML Reference</a><br>
+  <a href="https://campus.w3schools.com/collections/certifications/products/html-certificate" target="_blank" class="w3-button ga-fp w3-block ws-pink ref-button ws-pink-hover" title="Add HTML Certification">Get Certified</a><br>
+  </div>
+ <div class="w3-col l6" style="padding:3%">
+  <div class="w3-hide-small grey-color w3-card-2 w3-round" style="padding:16px;">
+   <h3>HTML Example:</h3>
+   <div class="w3-code htmlHigh notranslate green-border" style="height:300px">
+<span class="doctypecolor" style="color:slategray">&lt;!DOCTYPE html&gt;</span><br>
+<span class="tagnamecolor" style="color:#905"><span class="tagcolor" style="color:#999">&lt;</span>html<span class="tagcolor" style="color:#999">&gt;</span></span><br><span class="tagnamecolor" style="color:#905"><span class="tagcolor" style="color:#999">&lt;</span>head<span class="tagcolor" style="color:#999">&gt;</span></span><br>
+<span class="tagnamecolor" style="color:#905"><span class="tagcolor" style="color:#999">&lt;</span>title<span class="tagcolor" style="color:#999">&gt;</span></span>HTML Tutorial<span class="tagnamecolor" style="color:#905"><span class="tagcolor" style="color:#999">&lt;</span>/title<span class="tagcolor" style="color:#999">&gt;</span></span><br><span class="tagnamecolor" style="color:#905"><span class="tagcolor" style="color:#999">&lt;</span>/head<span class="tagcolor" style="color:#999">&gt;</span></span><br>
+<span class="tagnamecolor" style="color:#905"><span class="tagcolor" style="color:#999">&lt;</span>body<span class="tagcolor" style="color:#999">&gt;</span></span><br><br>
+<span class="tagnamecolor" style="color:#905"><span class="tagcolor" style="color:#999">&lt;</span>h1<span class="tagcolor" style="color:#999">&gt;</span></span>This is a heading<span class="tagnamecolor" style="color:#905"><span class="tagcolor" style="color:#999">&lt;</span>/h1<span class="tagcolor" style="color:#999">&gt;</span></span><br>
+<span class="tagnamecolor" style="color:#905"><span class="tagcolor" style="color:#999">&lt;</span>p<span class="tagcolor" style="color:#999">&gt;</span></span>This is a paragraph.<span class="tagnamecolor" style="color:#905"><span class="tagcolor" style="color:#999">&lt;</span>/p<span class="tagcolor" style="color:#999">&gt;</span></span><br><br>
+<span class="tagnamecolor" style="color:#905"><span class="tagcolor" style="color:#999">&lt;</span>/body<span class="tagcolor" style="color:#999">&gt;</span></span><br>
+<span class="tagnamecolor" style="color:#905"><span class="tagcolor" style="color:#999">&lt;</span>/html<span class="tagcolor" style="color:#999">&gt;</span></span>
+    </div>
+   <a href="https://www.programiz.com/html/online-compiler/">Try it Yourself</a>
+  </div>
+ </div>
+ </div>
+</div>
+<div class="w3-row w3-padding-32 ws-yellow">
+<div class="w3-content">
+   <div id="css"></div>
+ <div class="w3-col l6 w3-center" style="padding:3%">
+  <h1 style="font-size:100px;font-weight:700">CSS</h1>
+  <p style="font-size:19px;">The language for styling web pages</p>
+  <a href="/css/default.asp" class="w3-button ga-fp w3-block tut-button">Learn CSS</a><br>
+  <a href="/cssref/index.php" class="w3-button ga-fp w3-block ref-button black-color">CSS Reference</a><br>
+  <a href="https://campus.w3schools.com/collections/certifications/products/css-certificate" target="_blank" class="w3-button ga-fp w3-block ws-pink ref-button ws-pink-hover" title="Add CSS Certification">Get Certified</a><br>
+  </div>
+ <div class="w3-col l6" style="padding:3%">
+  <div class="w3-hide-small grey-color w3-card-2 w3-round" style="padding:16px;">
+  <h3>CSS Example:</h3>
+  <div class="w3-code cssHigh notranslate green-border"><span class="cssselectorcolor" style="color:#905">
+body <span class="cssdelimitercolor" style="color:#999">{</span><span class="csspropertycolor" style="color:#d73a49"><br>
+&nbsp; background-color<span class="csspropertyvaluecolor" style="color:#005cc5"><span class="cssdelimitercolor" style="color:#999">:</span> lightblue<span class="cssdelimitercolor" style="color:#999">;</span></span><br></span><span class="cssdelimitercolor" style="color:#999">}</span><br><br>
+h1 <span class="cssdelimitercolor" style="color:#999">{</span><span class="csspropertycolor" style="color:#d73a49"><br>
+&nbsp; color<span class="csspropertyvaluecolor" style="color:#005cc5"><span class="cssdelimitercolor" style="color:#999">:</span> white<span class="cssdelimitercolor" style="color:#999">;</span></span><br>
+&nbsp; text-align<span class="csspropertyvaluecolor" style="color:#005cc5"><span class="cssdelimitercolor" style="color:#999">:</span> center<span class="cssdelimitercolor" style="color:#999">;</span></span><br></span><span class="cssdelimitercolor" style="color:#999">}</span><br><br>p <span class="cssdelimitercolor" style="color:#999">{</span><span class="csspropertycolor" style="color:#d73a49"><br>&nbsp; font-family<span class="csspropertyvaluecolor" style="color:#005cc5"><span class="cssdelimitercolor" style="color:#999">:</span> verdana<span class="cssdelimitercolor" style="color:#999">;</span></span><br></span><span class="cssdelimitercolor" style="color:#999">}</span> </span></div>
+  <a href="/css/tryit.asp?filename=trycss_default" target="_blank" class="w3-button ga-fp tryit-button">Try it Yourself</a>
+  </div>
+ </div>
+ </div>
+ <div class="w3-row w3-padding-32 ws-black">
+<div class="w3-content">
+    <div id="javascript"></div>
+ <div class="w3-col l6 w3-center" style="padding:3%">
+  <h1 style="font-size:70px;font-weight:700;margin-bottom:18px!important">JavaScript</h1>
+  <p style="font-size:19px">The language for programming web pages</p>
+  <a href="/js/default.asp" class="w3-button ga-fp w3-block tut-button">Learn JavaScript</a><br>
+  <a href="/jsref/default.asp" class="w3-button ga-fp w3-block ref-button">JavaScript Reference</a><br>
+  <a href="https://campus.w3schools.com/collections/certifications/products/javascript-certificate" target="_blank" class="w3-button ga-fp w3-block ws-pink ref-button ws-pink-hover" title="Add JavaScript Certification">Get Certified</a><br>
+ </div>
+ <div class="w3-col l6" style="padding:3%">
+  <div class="w3-hide-small w3-card-2 grey-color w3-round" style="padding:16px;">
+   <h3>JavaScript Example:</h3>
+   <div class="w3-code notranslate green-border">
+   <div class="htmlHigh">
+<span class="tagnamecolor" style="color:#905"><span class="tagcolor" style="color:#999">&lt;</span>button<span class="attributecolor" style="color:green"> onclick<span class="attributevaluecolor" style="color:#005cc5">="myFunction()"</span></span><span class="tagcolor" style="color:#999">&gt;</span></span>Click Me!<span class="tagnamecolor" style="color:#905"><span class="tagcolor" style="color:#999">&lt;</span>/button<span class="tagcolor" style="color:#999">&gt;</span></span><br><br>
+<span class="tagnamecolor" style="color:#905"><span class="tagcolor" style="color:#999">&lt;</span>script<span class="tagcolor" style="color:#999">&gt;</span></span><span class="jscolor" style="color:black"><br>
+<span class="jskeywordcolor" style="color:#005cc5">function</span> myFunction() {<br><span class="jsnumbercolor" style="color:#905">
+</span>     &nbsp; <span class="jskeywordcolor" style="color:#005cc5">let</span> x = document.<span class="jspropertycolor" style="color:black">getElementById</span>(<span class="jsstringcolor" style="color:green">"demo"</span>);<br><span class="jsnumbercolor" style="color:#905">
+</span>&nbsp; x.<span class="jspropertycolor" style="color:black">style</span>.<span class="jspropertycolor" style="color:black">fontSize</span> = <span class="jsstringcolor" style="color:green">"25px"</span>; <br><span class="jsnumbercolor" style="color:#905">
+</span>&nbsp; x.<span class="jspropertycolor" style="color:black">style</span>.<span class="jspropertycolor" style="color:black">color</span> = <span class="jsstringcolor" style="color:green">"red"</span>; <br>}<br>
+</span><span class="tagnamecolor" style="color:#905"><span class="tagcolor" style="color:#999">&lt;</span>/script<span class="tagcolor" style="color:#999">&gt;</span></span>
+     </div>
+   </div>
+   <a href="/js/tryit.asp?filename=tryjs_default" target="_blank" class="w3-button ga-fp tryit-button">Try it Yourself</a>
+  </div>
+ </div>
+ </div>
+ <div class="w3-row w3-padding-32 ws-turquoise">
+<div class="w3-content">
+    <div id="c"></div>
+ <div class="w3-col l6 w3-center" style="padding:3%">
+  <h1 style="font-weight:700">C</h1>
+  <p style="font-size:19px">C is a powerful general-purpose programming language developed in the early 1970s.</br> It is widely used for system software, operating systems, embedded systems, and more.</p>
+  <a href="/sql/default.asp" class="w3-button ga-fp w3-block tut-button">Learn C</a><br>
+  <a href="/sql/sql_ref_keywords.asp" class="w3-button ga-fp ref-button black-color">C Reference</a><br>
+  <a href="https://campus.w3schools.com/collections/certifications/products/sql-certificate" target="_blank" class="w3-button ga-fp w3-block ws-pink ref-button ws-pink-hover" title="Add SQL Certification">Get Certified</a><br>
+
+ </div>
+ <div class="w3-col l6" style="padding:3%">
+  <div class="w3-hide-small w3-card-2 grey-color w3-round" style="padding:16px;">
+  <h3>C Example:</h3>
+ 
+ </div>
+</div>
+</div>
+<div class="w3-row w3-padding-32 ws-turquoise">
+<div class="w3-content">
+     <div id="cpp">
+ <div class="w3-col l6 w3-center" style="padding:3%">
+  <h1 style="font-weight:700">C++</h1>
+  <p style="font-size:19px">C++ was developed as an extension of C, adding object-oriented features while retaining efficiency.</br> It’s widely used in system programming, game development, and high-performance applications.</p>
+  <a href="/sql/default.asp" class="w3-button ga-fp w3-block tut-button">Learn C++</a><br>
+  <a href="/sql/sql_ref_keywords.asp" class="w3-button ga-fp ref-button black-color">C++ Reference</a><br>
+  <a href="https://campus.w3schools.com/collections/certifications/products/sql-certificate" target="_blank" class="w3-button ga-fp w3-block ws-pink ref-button ws-pink-hover" title="Add SQL Certification">Get Certified</a><br>
+
+  </div>
+ </div>
+</div>
+</div>
+<div class="w3-row w3-padding-32 ws-turquoise">
+<div class="w3-content">
+    <div id="java"></div>
+ <div class="w3-col l6 w3-center" style="padding:3%">
+  <h1 style="font-weight:700">JAVA</h1>
+  <p style="font-size:19px">Java is a high-level, object-oriented programming language.</br> It’s platform-independent, thanks to the JVM, and widely used in enterprise applications and mobile development.</p>
+  <a href="/sql/default.asp" class="w3-button ga-fp w3-block tut-button">Learn JAVA</a><br>
+  <a href="/sql/sql_ref_keywords.asp" class="w3-button ga-fp ref-button black-color">JAVA Reference</a><br>
+  <a href="https://campus.w3schools.com/collections/certifications/products/sql-certificate" target="_blank" class="w3-button ga-fp w3-block ws-pink ref-button ws-pink-hover" title="Add SQL Certification">Get Certified</a><br>
+
+ </div>
+ <div class="w3-col l6" style="padding:3%">
+  <div class="w3-hide-small w3-card-2 grey-color w3-round" style="padding:16px;">
+
+ </div>
+</div>
+</div>
+
+</div>
+<div class="w3-row w3-padding-32 ws-light-pink">
+<div class="w3-content">
+    <div id="python"></div>
+ <div class="w3-col l6 w3-center" style="padding:3%">
+  <h1 style="font-weight:700">Python</h1>
+  <p style="font-size:19px">A popular programming language</p>
+  <a href="/python/default.asp" class="w3-button ga-fp w3-block tut-button">Learn Python</a><br>
+  <a href="/python/python_reference.asp" class="w3-button ga-fp ref-button black-color">Python Reference</a><br>
+  <a href="https://campus.w3schools.com/collections/certifications/products/python-certificate" target="_blank" class="w3-button ga-fp w3-block ws-pink ref-button ws-pink-hover" title="Add Python Certification">Get Certified</a><br>
+ </div>
+ <div class="w3-col l6" style="padding:3%">
+  <div class="w3-hide-small w3-card-2 grey-color w3-round" style="padding:16px;">
+  <h3>Python Example:</h3>
+  <div class="w3-code jsHigh notranslate green-border" style="height:210px"><span class="jscolor" style="color:black"><span class="jsnumbercolor" style="color:#905">
+</span>    <span class="jskeywordcolor" style="color:#005cc5">if</span> <span class="jsnumbercolor" style="color:#905">5</span> &gt; <span class="jsnumbercolor" style="color:#905">2</span>:<br>&nbsp; print(<span class="jsstringcolor" style="color:green">"Five is greater than two!"</span>)<span class="jsnumbercolor" style="color:#905">
+</span>   </span></div>
+  <a href="/python/trypython.asp?filename=demo_indentation" target="_blank" class="w3-button ga-fp tryit-button">Try it Yourself</a>
+  </div>
+ </div>
+ </div>
+</div>
+<div class="w3-row w3-padding-32 ws-turquoise">
+<div class="w3-content">
+    <div id="sql"></div>
+ <div class="w3-col l6 w3-center" style="padding:3%">
+  <h1 style="font-weight:700">SQL</h1>
+  <p style="font-size:19px">A language for accessing databases</p>
+  <a href="/sql/default.asp" class="w3-button ga-fp w3-block tut-button">Learn SQL</a><br>
+  <a href="/sql/sql_ref_keywords.asp" class="w3-button ga-fp ref-button black-color">SQL Reference</a><br>
+  <a href="https://campus.w3schools.com/collections/certifications/products/sql-certificate" target="_blank" class="w3-button ga-fp w3-block ws-pink ref-button ws-pink-hover" title="Add SQL Certification">Get Certified</a><br>
+
+ </div>
+ <div class="w3-col l6" style="padding:3%">
+  <div class="w3-hide-small w3-card-2 grey-color w3-round" style="padding:16px;">
+  <h3>SQL Example:</h3>
+  <div class="w3-code sqlHigh notranslate green-border" style="height:210px"><span class="sqlcolor" style="color:black"><span class="sqlnumbercolor" style="color:#905">
+</span>   <span class="sqlkeywordcolor" style="color:#005cc5">SELECT</span> * <span class="sqlkeywordcolor" style="color:#005cc5">FROM</span> Customers<br><span class="sqlnumbercolor" style="color:#905">
+</span>   <span class="sqlkeywordcolor" style="color:#005cc5">WHERE</span> Country=<span class="sqlstringcolor" style="color:green">'Mexico'</span>;<span class="sqlnumbercolor" style="color:#905">
+</span>   </span></div>
+  <a href="/sql/trysql.asp?filename=trysql_select_where" target="_blank" class="w3-button ga-fp tryit-button">Try it Yourself</a>
+  </div>
+ </div>
+</div>
+</div>
+
+</div>
+</div>
+
+
+
+</body>
+</html>
