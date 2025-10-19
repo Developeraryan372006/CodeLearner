@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SQL - Learn Databases</title>
+  <link rel="icon" href="sql-logo.png" type="image/png">
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box;font-family:"Segoe UI",sans-serif;}
+    body{background:#f9fafc;color:#333;line-height:1.6;}
+    header{background:#006400;color:#fff;padding:1rem 2rem;text-align:center;}
+    header h1{font-size:2rem;}
+    nav{margin-top:10px;}
+    nav a{color:#fff;text-decoration:none;margin:0 15px;font-weight:500;}
+    nav a:hover{text-decoration:underline;}
+    .hero{background:linear-gradient(to right,#008000,#00cc66);color:white;padding:4rem 2rem;text-align:center;}
+    .hero h2{font-size:2.5rem;margin-bottom:1rem;}
+    .container{max-width:1100px;margin:auto;padding:2rem;}
+    .card{background:white;padding:1.5rem;margin:1rem 0;border-radius:10px;box-shadow:0 4px 6px rgba(0,0,0,0.1);transition:.3s;}
+    .card:hover{transform:translateY(-5px);}
+    .card h3{margin-bottom:.8rem;color:#006400;}
+    pre{background:#f4f4f4;padding:1rem;border-radius:5px;overflow-x:auto;}
+    footer{background:#006400;color:white;text-align:center;padding:1rem;margin-top:2rem;}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>SQL</h1>
+    <nav>
+      <a href="#intro">Introduction</a>
+      <a href="#history">History</a>
+      <a href="#features">Features</a>
+      <a href="#uses">Applications</a>
+      <a href="#advantages">Advantages</a>
+      <a href="#example">Example</a>
+      <a href="#resources">Resources</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Manage Data Efficiently</h2>
+    <p>SQL is the standard language for managing and querying relational databases.</p>
+  </section>
+
+  <div class="container">
+    <div id="intro" class="card">
+      <h3>Introduction</h3>
+      <p>SQL (Structured Query Language) is used to manage and query relational databases. It allows insertion, updating, deletion, and retrieval of data.</p>
+    </div>
+
+    <div id="history" class="card">
+      <h3>History</h3>
+      <p>SQL was developed at IBM in the 1970s, originally called SEQUEL. It later became the industry standard for relational databases.</p>
+    </div>
+
+    <div id="features" class="card">
+      <h3>Key Features</h3>
+      <ul>
+        <li>Manage relational databases</li>
+        <li>Retrieve and manipulate data</li>
+        <li>Supports complex queries</li>
+        <li>Standardized across platforms</li>
+      </ul>
+    </div>
+
+    <div id="uses" class="card">
+      <h3>Applications</h3>
+      <ul>
+        <li>Banking and financial systems</li>
+        <li>E-commerce platforms</li>
+        <li>Data analysis and reporting</li>
+        <li>Business intelligence systems</li>
+      </ul>
+    </div>
+
+    <div id="advantages" class="card">
+      <h3>Advantages & Limitations</h3>
+      <ul>
+        <li><b>Advantages:</b> Universal standard, easy to learn, powerful queries</li>
+        <li><b>Limitations:</b> Not suitable for non-relational (NoSQL) databases, performance issues with very large datasets</li>
+      </ul>
+    </div>
+
+    <div id="example" class="card">
+      <h3>Hello World Example</h3>
+      <pre>
+CREATE TABLE Students (
+    ID INT PRIMARY KEY,
+    Name VARCHAR(50),
+    Age INT
+);
+
+INSERT INTO Students VALUES (1, 'John', 20);
+
+SELECT * FROM Students;
+      </pre>
+      <p><b>Output:</b></p>
+      <pre>
+ID | Name | Age
+1  | John | 20
+      </pre>
+    </div>
+
+   
+     <div id="compiler" class="card">
+      <h3>SQL Editor</h3>
+      <p><a href="https://www.programiz.com/sql/online-compiler">Edit to Execute</a></p>
+    </div>
+
+
+    <div id="resources" class="card">
+      <h3>Resources</h3>
+      <ul>
+        <li><a href="https://www.w3schools.com/sql/" target="_blank">W3Schools SQL</a></li>
+        <li><a href="https://www.sqltutorial.org/" target="_blank">SQL Tutorial</a></li>
+        <li><a href="https://www.geeksforgeeks.org/sql-tutorial/" target="_blank">GeeksforGeeks SQL</a></li>
+      </ul>
+    </div>
+
+    <div id="contact" class="card">
+      <h3>Contact</h3>
+      <p>Email: <a href="mailto:info@sql.com">info@sql.com</a></p>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2025 Learn SQL | Designed by SAD</p>
+  </footer>
+</body>
+</html>
